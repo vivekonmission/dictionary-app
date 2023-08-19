@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Borel&family=Fugaz+One&display=swap');
+
+
+body{
+   text-align: center;
+   background-color: #FFF5E4;
+}
+h1{
+   font-family: 'Playfair Display', serif;
+   color: #E23E57;
+}
+.container{
+   background-color: white;
+   padding: 50px 50px;
+   margin: 5px auto;
+   width: 400px;
+   border-radius: 10px;
+   box-shadow: 0 20px 40px rgba(38, 33, 61,0.2);
+
+}
+.btn{
+   color: #fff;
+   background-color: #FFAAA5;
+   border: none;
+   font-weight: 700;
+   border-radius: 10px;
+   width: 23%;
+   cursor: pointer;
+}
+
+.search-bar{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.btn:active{
+   background-color: white;
+   color: #A076F9;
+
+}
+#inp{
+  
+   border: none;
+   padding: 0.3rem;
+   font-size: 1.3rem;
+   border-bottom: 3px solid #FFD1D1;
+   outline-style:none;
+}
+.result{
+   position: relative;
+}
+.result .word{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 80px;
+   align-items: center;
+   height: 0.2rem;
+}
+.result button{
+   color: #FFAAA5;
+   border: none;
+   background-color: transparent;
+   font-size: 1rem;
+}
+.result button:active{
+   color: green;
+}
+.result h3{
+   font-size: 25px;
+   color: #1f194c;
+}
+#tag{
+   font-family: 'Playfair Display', serif;
+   color: #FF9292;
+   overflow: hidden; /* Ensures the content is not revealed until the animation */
+   border-right: .15em solid orange; /* The typwriter cursor */
+   white-space: nowrap; /* Keeps the content on a single line */
+   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+   letter-spacing: .15em; /* Adjust as needed */
+   animation: 
+     typing 5.5s steps(40),
+     blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+   from { width: 0 }
+   to {  width: calc(100% - 0.15em); }
+ }
+ 
+ /* The typewriter cursor effect */
+ @keyframes blink-caret {
+   from, to { border-color: transparent }
+   99% { border-color: transparent; } 
+   100% { border-color: #E23E57; }
+ }
+@media(max-width: 512px){
+   tag{
+      color: #FFF5E4;
+   }
+}
+
+.result .details{
+   display: flex;
+   
+}
+.result .details p{
+   margin-right: 3px;
+   color: lightslategray;
+}
+.word-mean{
+   text-align: left;
+}
+.word-example{
+   text-align: left;
+   color: lightslategray;
+   border-left: 5px solid #FFD1D1;
+   padding-left: 5px;
+}
+h1 i{
+   transition: 2s;
+}
+h1 i:hover{
+   color: #A076F9;
+
+}
+footer p{
+   position: relative;
+   font-family: 'Playfair Display';
+   top: 50px;
+   font-size: 1.1rem;
+   left : 0;
+}
